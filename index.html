@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sebastiaan Viezee | Product consultant in SaaS</title>
+<meta name="description" content="Product consultant in SaaS | van klantvraag naar platform naar werkende operatie. Portfolio en cv van Sebastiaan Viezee, Utrecht.">
+<meta property="og:title" content="Sebastiaan Viezee | Product consultant in SaaS">
+<meta property="og:description" content="Van klantvraag naar platform naar werkende operatie. Portfolio en cv.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sebastiaan.viezee.nl/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Sebastiaan Viezee","jobTitle":"Product consultant",
+"email":"mailto:sebastiaan@viezee.nl","url":"https://sebastiaan.viezee.nl",
+"address":{"@type":"PostalAddress","addressLocality":"Utrecht","addressCountry":"NL"},
+"sameAs":["https://www.linkedin.com/in/sebastiaanviezee"]}
+</script>
+<style>
+:root{
+  --paper:#FBF9F5; --cream:#F0EBE1; --ink:#1A3320; --ink-soft:#3A6340;
+  --terra:#B84828; --terra-light:#D4793F; --dark:#1C1C1E;
+  --gray:#6E6459; --gray-light:#8C7B6B;
+  --rule:rgba(26,51,32,.16); --rule-soft:rgba(26,51,32,.09);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--dark);font-family:'DM Sans',sans-serif;font-size:16.5px;line-height:1.75}
+a{color:var(--terra);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1020px;margin:0 auto;padding:0 28px}
+
+/* nav */
+nav{position:sticky;top:0;background:rgba(251,249,245,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule-soft);z-index:10}
+.nv-in{max-width:1020px;margin:0 auto;padding:14px 28px;display:flex;justify-content:space-between;align-items:center}
+.nv-name{font-family:'Playfair Display',serif;font-weight:700;font-size:17px;color:var(--ink)}
+.nv-links{list-style:none;display:flex;gap:26px}
+.nv-links a{color:var(--gray);font-size:14.5px;font-weight:500}
+.nv-links a:hover{color:var(--ink);text-decoration:none}
+
+/* sectielabel met streepje */
+.lbl{display:flex;align-items:center;gap:12px;color:var(--terra);font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+.lbl::before{content:"";width:34px;height:2px;background:var(--terra)}
+
+section{padding:74px 0}
+h2{font-family:'Playfair Display',serif;font-size:31px;color:var(--ink);margin-bottom:16px;line-height:1.25}
+h2 i{color:var(--terra);font-style:italic}
+
+/* hero */
+.hero{padding:86px 0 70px;border-bottom:1px solid var(--rule-soft)}
+.hero-rule{width:64px;height:5px;background:var(--ink);margin-bottom:26px}
+h1{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(38px,6vw,58px);color:var(--ink);line-height:1.08;margin-bottom:14px}
+.role{font-size:19px;color:var(--ink-soft);font-weight:500;margin-bottom:22px}
+.role .sep{color:var(--terra);margin:0 8px}
+.hero p.pitch{max-width:640px;color:var(--gray);font-size:17.5px;margin-bottom:26px}
+.avail{display:inline-block;background:var(--cream);color:var(--ink);font-size:13.5px;font-weight:600;padding:6px 14px;border-left:3px solid var(--terra);margin-bottom:30px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 26px;font-weight:600;font-size:15px;border:1.5px solid var(--ink);color:var(--ink)}
+.btn:hover{background:var(--ink);color:var(--paper);text-decoration:none}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn.solid:hover{background:var(--ink-soft)}
+
+/* vier dingen */
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--rule-soft);border:1px solid var(--rule-soft);margin-top:30px}
+.cell{background:var(--paper);padding:26px 28px}
+.cell b{display:block;font-family:'Playfair Display',serif;font-size:18px;color:var(--ink);margin-bottom:6px}
+.cell .nr{color:var(--terra);font-size:13px;font-weight:600;letter-spacing:.08em;display:block;margin-bottom:8px}
+.cell p{color:var(--gray);font-size:15px}
+
+/* projectkaarten */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:34px}
+.card{border:1px solid var(--rule);background:#fff;padding:30px 30px 26px;display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(26,51,32,.10)}
+.card h3{font-family:'Playfair Display',serif;font-size:21px;color:var(--ink);margin-bottom:10px}
+.card p{color:var(--gray);font-size:15.5px;flex:1}
+.card .tech{margin-top:18px;padding-top:14px;border-top:1px solid var(--rule-soft);color:var(--gray-light);font-size:13px;letter-spacing:.03em}
+.card .soon{margin-top:10px;color:var(--terra);font-size:13.5px;font-weight:600}
+
+/* contact */
+.contact{background:var(--ink);color:var(--cream)}
+.contact .lbl{color:var(--terra-light)}
+.contact .lbl::before{background:var(--terra-light)}
+.contact h2{color:var(--paper)}
+.contact p{color:rgba(240,235,225,.85);max-width:560px}
+.contact a{color:var(--terra-light);font-weight:600}
+.clinks{margin-top:24px;display:flex;gap:28px;flex-wrap:wrap;font-size:16px}
+
+footer{padding:26px 0;border-top:1px solid var(--rule-soft);color:var(--gray-light);font-size:13.5px}
+
+@media(max-width:720px){
+  .grid4,.cards{grid-template-columns:1fr}
+  .nv-links{gap:16px}
+  section{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="nv-in">
+  <a class="nv-name" href="#top">Sebastiaan Viezee</a>
+  <ul class="nv-links">
+    <li><a href="#sterk">Sterk in</a></li>
+    <li><a href="#werk">Gebouwd</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div class="hero-rule"></div>
+  <h1>Sebastiaan Viezee</h1>
+  <div class="role">Product consultant in SaaS<span class="sep">|</span>van klantvraag naar platform naar werkende operatie</div>
+  <p class="pitch">Mijn achtergrond is hospitality en die reflex ben ik nooit kwijtgeraakt: de gebruiker is de uitkomstmaat. In software betekent dat een platform dat aanvoelt alsof het weet wie ervoor zit.</p>
+  <div class="avail">Beschikbaar vanaf september 2026</div>
+  <div class="cta">
+    <a class="btn solid" href="cv.html">Bekijk mijn cv</a>
+    <a class="btn" href="#werk">Wat ik gebouwd heb</a>
+  </div>
+</div></header>
+
+<section id="sterk"><div class="wrap">
+  <div class="lbl">Waar ik goed in ben</div>
+  <h2><i>Vier dingen</i> waar ik voor word gebeld</h2>
+  <p style="max-width:640px;color:var(--gray)">Ik kom het best tot mijn recht in een bedrijf in groeifase met korte lijnen, waar nog iets gebouwd moet worden. Wat me niet past is beheer, strakke procedures en een lange weg tussen idee en uitvoering.</p>
+  <div class="grid4">
+    <div class="cell"><span class="nr">01</span><b>Klantvraag vertalen</b><p>Wat de klant nodig heeft omzetten naar wat er gebouwd moet worden, en de techniek terugvertalen naar wat de klant er echt aan heeft.</p></div>
+    <div class="cell"><span class="nr">02</span><b>Een operatie die meegroeit</b><p>Support, implementatie en procedures inrichten zodat er tien klanten bij kunnen zonder dat het vastloopt.</p></div>
+    <div class="cell"><span class="nr">03</span><b>Handwerk eruit halen</b><p>Werk automatiseren dat niemand meer met de hand hoeft te doen. Ontworpen, gebouwd en overdraagbaar opgeleverd.</p></div>
+    <div class="cell"><span class="nr">04</span><b>Mensen meekrijgen</b><p>Een richting uitleggen zodat een team er zelf in gaat staan, zonder te duwen.</p></div>
+  </div>
+</div></section>
+
+<section id="werk" style="background:var(--cream)"><div class="wrap">
+  <div class="lbl">Gebouwd en geautomatiseerd</div>
+  <h2>Ik bouw zelf wat ik <i>bedenk</i></h2>
+  <p style="max-width:640px;color:var(--gray)">Dat staat niet los van mijn werk: het is de reden dat ik weet wat ik van een developer vraag als ik iets vraag. Alles hieronder draait en wordt door mij beheerd.</p>
+  <div class="cards">
+    <div class="card">
+      <h3>Atom-platform</h3>
+      <p>Webplatform op een eigen Linux-server met vijf modules achter &eacute;&eacute;n login: een beleggingsdashboard met dagelijkse koersdata, een lijstjesmaker met AI-functies, een cursussenmodule en een vacature-vergelijker. Ontstaan uit &eacute;&eacute;n dashboard en module voor module gegroeid; zelf gebouwd, gedeployed en in productie gehouden.</p>
+      <div class="tech">Python &middot; SQLite &middot; nginx &middot; systemd &middot; git-deploy</div>
+      <div class="soon">Case study volgt</div>
+    </div>
+    <div class="card">
+      <h3>AI-agents en automatisering</h3>
+      <p>Drie agents op n8n en Claude die dagelijks draaien zonder tussenkomst: een digest over verbonden bronnen, een koersupdate die zelf de databestanden bijwerkt, en een wekelijkse review van het systeem dat ze aanstuurt. Plus de n8n-workflows achter de AI-functies van het platform.</p>
+      <div class="tech">n8n &middot; Claude &middot; Groq &middot; scheduled tasks</div>
+      <div class="soon">Case study volgt</div>
+    </div>
+    <div class="card">
+      <h3>Website DeWorkshopRuimte</h3>
+      <p>De site van ons eigen verhuurbedrijf voor vergader- en workshopruimte, met SEO en conversie als uitgangspunt en een preview-branch-workflow voor elke wijziging. De designtaal van deze portfoliosite komt er rechtstreeks vandaan.</p>
+      <div class="tech">Next.js &middot; Vercel &middot; SEO &middot; conversie</div>
+      <div class="soon">Case study volgt</div>
+    </div>
+    <div class="card">
+      <h3>Website deVernieuwers</h3>
+      <p>Complete herbouw van de site van deVernieuwers: content, structuur en een eigen design system, opgezet om door anderen te onderhouden zonder dat het ontwerp verwatert.</p>
+      <div class="tech">Next.js &middot; Vercel &middot; design system</div>
+      <div class="soon">Case study volgt</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <div class="lbl">Contact</div>
+  <h2>Vragen of een gesprek?</h2>
+  <p>Ik denk graag mee over productrollen bij softwarebedrijven in groeifase, in en rond Utrecht. Een bericht is zo gestuurd.</p>
+  <div class="clinks">
+    <a href="mailto:sebastiaan@viezee.nl">sebastiaan@viezee.nl</a>
+    <a href="https://www.linkedin.com/in/sebastiaanviezee" rel="me">linkedin.com/in/sebastiaanviezee</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">Sebastiaan Viezee &middot; Utrecht &middot; <a href="cv.html">cv</a></div></footer>
+
+</body>
+</html>

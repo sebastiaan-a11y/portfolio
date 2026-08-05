@@ -1,0 +1,7 @@
+# Interne opdracht-, geheugen- en werkbestanden: niet mee in de repo.
+# De server heeft alleen index.html, cv.html en de nginx-conf nodig.
+opdracht/
+CLAUDE.md
+memory.md
+log.md
+desktop.ini
