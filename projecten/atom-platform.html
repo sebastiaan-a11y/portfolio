@@ -97,25 +97,25 @@ footer{padding:26px 0;border-top:1px solid var(--rule-soft);color:var(--gray-lig
 
 <section style="background:var(--cream)"><div class="wrap">
   <h2>Wat ik bouwde</h2>
-  <p>Vijf modules achter dezelfde login. Het beleggingsdashboard toont koersen, een waarde-inleg-grafiek, benchmarks en het jaaroverzicht voor box 3. De lijstjesmaker werkt met categorie&euml;n per item en meerdere gebruikers. Daarbovenop draait AI-lijsten: drie manieren om met een zin een lijst te maken, te checken of aan te vullen. De cursussenmodule volgt cursussen met voortgang per gebruiker; de eerste cursus is mijn eigen Scrum Guide-training, acht modules, drie&euml;nvijftig vragen. De loopbaanmodule is de nieuwste: een vergelijkingstabel voor vacatures met scores per dimensie, die ik zelf wekelijks gebruik tijdens mijn eigen zoektocht. Een gedeelde startpagina met kengetallen per module houdt alles bij elkaar.</p>
-  <p class="note">Het platform zelf staat achter een eigen login. De loopbaanmodule bevat oordelen over sollicitatiebedrijven en het dashboard echte portefeuillecijfers, dat blijft priv&eacute;. Deze pagina beschrijft wat er staat, zonder de inhoud te tonen.</p>
+  <p>Vijf modules achter dezelfde login. Het beleggingsdashboard toont koersen, een waarde-inleg-grafiek, benchmarks en het jaaroverzicht voor box 3. De lijstjesmaker werkt met categorie&euml;n per item en meerdere gebruikers, met drie AI-functies erbovenop: een lijst maken uit een zin, een bestaande lijst laten checken en items toevoegen in gewone taal. De cursussenmodule volgt voortgang per gebruiker; de eerste cursus is mijn eigen Scrum Guide-training, acht modules, drie&euml;nvijftig vragen. De loopbaanmodule is een vergelijkingstabel voor vacatures met scores per dimensie, die ik zelf wekelijks gebruik tijdens mijn eigen zoektocht. Een startpagina met kengetallen per module houdt alles bij elkaar, en sinds augustus heeft het platform een eigen sessie-login met gebruikersbeheer en rechten per module.</p>
+  <p class="note">Het platform draait achter die eigen login: de loopbaanmodule bevat oordelen over sollicitatiebedrijven en het dashboard echte portefeuillecijfers, dat blijft priv&eacute;. Een demo-account met vaste voorbeelddata is er wel; vraag ernaar als je het platform wilt zien.</p>
 </div></section>
 
 <section><div class="wrap">
   <h2>Hoe</h2>
-  <p>Python zonder frameworks, SQLite per module, nginx en systemd voor de losse achtergrondprocessen, deploy via een git-pull. De AI-functies draaien via n8n-workflows op Groq.</p>
-  <div class="techline">Python &middot; SQLite &middot; nginx &middot; systemd &middot; n8n &middot; Groq &middot; git-deploy</div>
+  <p>Python uit de standaardbibliotheek, bewust zonder frameworks: elke module is een kleine eigen service op localhost met een eigen SQLite-database, beheerd door systemd, met nginx ervoor. De login is zelf gebouwd (sessies, rate-limiting, rechten per module) en faalt gesloten: valt de login-service uit, dan weigert elke module alle toegang. De AI-functies lopen via n8n-workflows op Groq, waarbij de site elk AI-antwoord zelf streng valideert voordat er iets wordt weggeschreven; de AI heeft geen toegang tot de database.</p>
+  <div class="techline">Python (stdlib) &middot; SQLite &middot; nginx &middot; systemd &middot; n8n &middot; Groq &middot; git-deploy</div>
 </div></section>
 
 <section style="background:var(--cream)"><div class="wrap">
   <h2>Wat het opleverde</h2>
-  <p>Een platform dat ik zelf in productie houd, van eerste idee tot vijfde module. De loopbaanmodule liet zich meteen bewijzen: bij de migratie kwamen dezelfde zestien vacatures, zesennegentig scores en zes acties terug als in mijn eigen kladbestand, en ik gebruik het scherm sindsdien elke week om vacatures naast elkaar te leggen.</p>
+  <p>Een platform van ruim zevenduizend regels eigen code dat ik zelf in productie houd, van eerste idee tot vijfde module. De loopbaanmodule liet zich meteen bewijzen: bij de migratie kwamen dezelfde zestien vacatures, zesennegentig scores en zes acties terug als in mijn eigen kladbestand, en ik gebruik het scherm sindsdien elke week om vacatures naast elkaar te leggen.</p>
 </div></section>
 
 <section><div class="wrap">
   <h2>Wat dit bewijst</h2>
   <div class="proof">
-    <p>Ik weet wat ik van een developer vraag omdat ik het zelf heb gedaan: de database-inrichting, de deploy, en de keuze om iets bewust niet te automatiseren (de loopbaanscores komen nog handmatig binnen, niet via AI). Dat is dezelfde vertaalslag die ik in mijn werk maak tussen klantvraag en techniek, alleen zit ik dan aan beide kanten van de tafel.</p>
+    <p>Ik weet wat ik van een developer vraag omdat ik het zelf heb gedaan: de database-inrichting, de deploy, en de keuzes over wat je wel en niet aan AI overlaat. De AI mag hier voorstellen doen, de server valideert en schrijft. De demo-gebruiker kan niets stukmaken, want de server weigert zijn schrijfacties, ook als iemand de interface omzeilt. Dat soort afwegingen is dezelfde vertaalslag die ik in mijn werk maak tussen klantvraag en techniek, alleen zit ik hier aan beide kanten van de tafel.</p>
   </div>
 </div></section>
 
